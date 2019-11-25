@@ -12,9 +12,6 @@
         }
     ],
     "env": {
-        "DB_CONNECTION": "pgsql",
-        "APP_KEY": {
-            "required": true
-        }
+        "DB_CONNECTION": "pgsql"
     }
 }
