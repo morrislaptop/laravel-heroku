@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', env('HEROKU_APP_NAME') ? 'https://' . env('HEROKU_APP_NAME') . '.herokuapp.com' : 'http://localhost'),
 
     'asset_url' => env('ASSET_URL', null),
 
