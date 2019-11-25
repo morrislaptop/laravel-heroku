@@ -13,5 +13,12 @@
     ],
     "env": {
         "DB_CONNECTION": "pgsql"
+    },
+    "scripts": {
+        "postdeploy": [
+            "export APP_KEY=$(php artisan key:generate --show)",
+            "php artisan db:seed",
+            "php artisan passport:client --personal"
+        ]
     }
 }
