@@ -119,7 +119,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => strpos(env('APP_KEY'), 'base64:') !== false ? env('APP_KEY') : substr(env('APP_KEY'), 0, 32),
 
     'cipher' => 'AES-256-CBC',
 
