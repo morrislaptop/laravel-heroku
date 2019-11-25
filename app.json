@@ -10,5 +10,11 @@
         {
             "url": "heroku/nodejs"
         }
-    ]
+    ],
+    "env": {
+        "DB_CONNECTION": "pgsql",
+        "APP_KEY": {
+            "generator": "secret"
+        }
+    }
 }
