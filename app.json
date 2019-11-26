@@ -27,14 +27,13 @@
     },
     "scripts": {
         "postdeploy": [
-            "php artisan db:seed",
-            "php artisan passport:client --personal"
+            "php artisan db:seed"
         ]
     },
     "environments": {
         "test": {
             "scripts": {
-                "test-setup": "php artisan migrate --seed && php artisan passport:client --personal",
+                "test-setup": "php artisan migrate --seed",
                 "test": "vendor/bin/phpunit --printer gh640\\\\PhpunitTap\\\\TapResultPrinter"
             }
         }
