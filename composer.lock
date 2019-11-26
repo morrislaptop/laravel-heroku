@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d1865f8135152521be2d2067131345a9",
+    "content-hash": "89425575000e238cbbb526d094d70010",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3293,6 +3293,50 @@
             "time": "2019-11-14T13:13:06+00:00"
         },
         {
+            "name": "gh640/phpunit-tap",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gh640/phpunit-tap.git",
+                "reference": "0ed1403d35c50c15734f45f3aec3defdb4bc3520"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gh640/phpunit-tap/zipball/0ed1403d35c50c15734f45f3aec3defdb4bc3520",
+                "reference": "0ed1403d35c50c15734f45f3aec3defdb4bc3520",
+                "shasum": ""
+            },
+            "require": {
+                "phpunit/phpunit": "^8.0",
+                "symfony/yaml": "^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gh640\\PhpunitTap\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Goto Hayato",
+                    "email": "habita.gh@gmail.com"
+                }
+            ],
+            "description": "Provides a TAP result printer for PHPUnit.",
+            "homepage": "https://github.com/gh640/phpunit-tap",
+            "keywords": [
+                "phpunit",
+                "phpunit reporter",
+                "tap",
+                "test"
+            ],
+            "time": "2019-03-24T10:00:51+00:00"
+        },
+        {
             "name": "hamcrest/hamcrest-php",
             "version": "v2.0.0",
             "source": {
@@ -4849,6 +4893,65 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2016-10-03T07:35:21+00:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "76de473358fe802578a415d5bb43c296cf09d211"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/76de473358fe802578a415d5bb43c296cf09d211",
+                "reference": "76de473358fe802578a415d5bb43c296cf09d211",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "conflict": {
+                "symfony/console": "<3.4"
+            },
+            "require-dev": {
+                "symfony/console": "^3.4|^4.0|^5.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2019-11-12T14:51:11+00:00"
         },
         {
             "name": "theseer/tokenizer",

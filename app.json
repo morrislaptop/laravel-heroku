@@ -30,5 +30,12 @@
             "php artisan db:seed",
             "php artisan passport:client --personal"
         ]
+    },
+    "environments": {
+        "test": {
+            "scripts": {
+                "test": "vendor/bin/phpunit --printer gh640\\\\PhpunitTap\\\\TapResultPrinter"
+            }
+        }
     }
 }

@@ -14,8 +14,8 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        $response = $this->get('/');
+        $users = \App\User::all();
 
-        $response->assertStatus(200);
+        $this->assertCount(1, $users);
     }
 }
