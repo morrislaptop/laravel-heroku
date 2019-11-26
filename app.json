@@ -34,6 +34,7 @@
     "environments": {
         "test": {
             "scripts": {
+                "test-setup": "php artisan migrate --seed && php artisan passport:client --personal",
                 "test": "vendor/bin/phpunit --printer gh640\\\\PhpunitTap\\\\TapResultPrinter"
             }
         }
